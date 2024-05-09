@@ -14,9 +14,7 @@ use App\Http\Controllers\MapController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/map', [MapController::class, 'showMap']);
+
+Route::get('/', [MapController::class, 'showMap']);
 
